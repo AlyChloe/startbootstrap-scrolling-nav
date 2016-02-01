@@ -17,3 +17,13 @@ $(function() {
         event.preventDefault();
     });
 });
+
+/*$(function () {
+    $("#website").on("click", function () {
+        $("#workContent").load("website.html");
+    });
+}); */
+
+$("#link").click(function(){
+    $(".classContainer").load("include/websites.html"); 
+});
