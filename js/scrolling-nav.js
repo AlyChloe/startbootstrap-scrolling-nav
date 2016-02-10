@@ -18,12 +18,9 @@ $(function() {
     });
 });
 
-/*$(function () {
-    $("#website").on("click", function () {
-        $("#workContent").load("website.html");
-    });
-}); */
+var pop = document.querySelectorAll('a[id="pop"]');
 
-$("#link").click(function(){
-    $(".classContainer").load("include/websites.html"); 
+$(pop).on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
